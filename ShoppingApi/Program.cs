@@ -18,6 +18,7 @@ namespace ShoppingApi
                 .AddJsonFile("appsettings.Development.json")
                 .Build();
             Log.Logger = new LoggerConfiguration()
+                .WriteTo.Seq("http://localhost:5341")
                 .ReadFrom.Configuration(config)
                 .CreateLogger();
             CreateHostBuilder(args).Build().Run();

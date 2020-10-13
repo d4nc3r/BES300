@@ -68,5 +68,8 @@ C:\dev\ShoppingApiSolution\ShoppingApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib
 C:\dev\ShoppingApiSolution\ShoppingApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\dev\ShoppingApiSolution\ShoppingApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\dev\ShoppingApiSolution\ShoppingApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\dev\ShoppingApiSolution\ShoppingApi\bin\Debug\netcoreapp3.1\Serilog.Sinks.PeriodicBatching.dll
+C:\dev\ShoppingApiSolution\ShoppingApi\bin\Debug\netcoreapp3.1\Serilog.Sinks.Seq.dll
 C:\dev\ShoppingApiSolution\ShoppingApi\obj\Debug\netcoreapp3.1\ShoppingApi.csproj.CoreCompileInputs.cache
 C:\dev\ShoppingApiSolution\ShoppingApi\obj\Debug\netcoreapp3.1\ShoppingApi.MvcApplicationPartsAssemblyInfo.cache
+C:\dev\ShoppingApiSolution\ShoppingApi\obj\Debug\netcoreapp3.1\ShoppingApi.csprojAssemblyReference.cache
