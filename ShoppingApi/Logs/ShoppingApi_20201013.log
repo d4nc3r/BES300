@@ -1681,3 +1681,332 @@ WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
 2020-10-13 15:31:55.169 -04:00 [Information] Executed endpoint '"ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)"'
 2020-10-13 15:31:55.174 -04:00 [Debug] '"ShoppingDataContext"' disposed.
 2020-10-13 15:31:55.178 -04:00 [Information] Request finished in 4786.8225ms 201 application/json; charset=utf-8
+2020-10-13 16:30:17.606 -04:00 [Debug] Hosting starting
+2020-10-13 16:30:17.821 -04:00 [Debug] Loaded hosting startup assembly "ShoppingApi"
+2020-10-13 16:30:17.823 -04:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-13 16:30:17.823 -04:00 [Information] Hosting environment: "Development"
+2020-10-13 16:30:17.823 -04:00 [Information] Content root path: "C:\dev\ShoppingApiSolution\ShoppingApi"
+2020-10-13 16:30:17.823 -04:00 [Debug] Hosting started
+2020-10-13 16:30:17.854 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:3000/curbsideorders application/json 45
+2020-10-13 16:30:17.859 -04:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2020-10-13 16:30:17.859 -04:00 [Verbose] All hosts are allowed.
+2020-10-13 16:30:17.904 -04:00 [Debug] 1 candidate(s) found for the request path '"/curbsideorders"'
+2020-10-13 16:30:17.910 -04:00 [Debug] Endpoint '"ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)"' with route pattern '"curbsideorders"' is valid for the request path '"/curbsideorders"'
+2020-10-13 16:30:17.916 -04:00 [Debug] Request matched endpoint '"ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)"'
+2020-10-13 16:30:17.919 -04:00 [Information] Executing endpoint '"ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)"'
+2020-10-13 16:30:17.933 -04:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-10-13 16:30:17.981 -04:00 [Information] Route matched with "{action = \"AddAnOrder\", controller = \"Curbside\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddAnOrder(ShoppingApi.Models.Curbside.PostCurbsideOrderRequest)" on controller "ShoppingApi.Controllers.CurbsideController" ("ShoppingApi").
+2020-10-13 16:30:17.985 -04:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-10-13 16:30:17.985 -04:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-10-13 16:30:17.985 -04:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2020-10-13 16:30:17.985 -04:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-10-13 16:30:17.986 -04:00 [Debug] Execution plan of "result" filters (in the following order): ["None"]
+2020-10-13 16:30:17.986 -04:00 [Debug] Executing controller factory for controller "ShoppingApi.Controllers.CurbsideController" ("ShoppingApi")
+2020-10-13 16:30:18.084 -04:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2020-10-13 16:30:18.103 -04:00 [Debug] Executed controller factory for controller "ShoppingApi.Controllers.CurbsideController" ("ShoppingApi")
+2020-10-13 16:30:18.110 -04:00 [Debug] Attempting to bind parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"' ...
+2020-10-13 16:30:18.113 -04:00 [Debug] Attempting to bind parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"' using the name '""' in request data ...
+2020-10-13 16:30:18.114 -04:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-10-13 16:30:18.130 -04:00 [Debug] JSON input formatter succeeded, deserializing to type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"'
+2020-10-13 16:30:18.130 -04:00 [Debug] Done attempting to bind parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"'.
+2020-10-13 16:30:18.130 -04:00 [Debug] Done attempting to bind parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"'.
+2020-10-13 16:30:18.130 -04:00 [Debug] Attempting to validate the bound parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"' ...
+2020-10-13 16:30:18.137 -04:00 [Debug] Done attempting to validate the bound parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"'.
+2020-10-13 16:30:18.139 -04:00 [Verbose] "Action Filter": Before executing "OnActionExecuting" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:18.139 -04:00 [Verbose] "Action Filter": After executing "OnActionExecuting" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:18.146 -04:00 [Information] Executing action method "ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)" - Validation state: Valid
+2020-10-13 16:30:18.146 -04:00 [Verbose] Executing action method "ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)" with arguments (["ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"])
+2020-10-13 16:30:18.615 -04:00 [Warning] No type was specified for the decimal column '"Cost"' on entity type '"ShoppingItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-13 16:30:18.659 -04:00 [Information] Entity Framework Core "3.1.8" initialized '"ShoppingDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-10-13 16:30:18.702 -04:00 [Debug] '"ShoppingDataContext"' generated a temporary value for the '"Id"' property of new '"CurbsideOrder"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:18.762 -04:00 [Debug] Context '"ShoppingDataContext"' started tracking '"CurbsideOrder"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:18.765 -04:00 [Debug] SaveChanges starting for '"ShoppingDataContext"'.
+2020-10-13 16:30:18.769 -04:00 [Debug] DetectChanges starting for '"ShoppingDataContext"'.
+2020-10-13 16:30:18.789 -04:00 [Debug] DetectChanges completed for '"ShoppingDataContext"'.
+2020-10-13 16:30:18.837 -04:00 [Debug] Opening connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:19.180 -04:00 [Debug] Opened connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:19.183 -04:00 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2020-10-13 16:30:19.199 -04:00 [Debug] Began transaction with isolation level '"ReadCommitted"'.
+2020-10-13 16:30:19.268 -04:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2020-10-13 16:30:19.279 -04:00 [Debug] Created DbCommand for '"ExecuteReader"' (3ms).
+2020-10-13 16:30:19.307 -04:00 [Debug] Executing DbCommand [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CurbsideOrders] ([For], [Items], [Status])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [CurbsideOrders]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2020-10-13 16:30:19.395 -04:00 [Information] Executed DbCommand ("94"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CurbsideOrders] ([For], [Items], [Status])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [CurbsideOrders]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2020-10-13 16:30:19.431 -04:00 [Debug] Foreign key property '"CurbsideOrder"."Id"' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2020-10-13 16:30:19.445 -04:00 [Debug] A data reader was disposed.
+2020-10-13 16:30:19.450 -04:00 [Debug] Committing transaction.
+2020-10-13 16:30:19.459 -04:00 [Debug] Committing transaction.
+2020-10-13 16:30:19.461 -04:00 [Debug] Closing connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:19.468 -04:00 [Debug] Closed connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:19.470 -04:00 [Debug] Disposing transaction.
+2020-10-13 16:30:19.489 -04:00 [Debug] An '"CurbsideOrder"' entity tracked by '"ShoppingDataContext"' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:19.492 -04:00 [Debug] SaveChanges completed for '"ShoppingDataContext"' with 1 entities written to the database.
+2020-10-13 16:30:19.504 -04:00 [Information] Executed action method "ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)", returned result "Microsoft.AspNetCore.Mvc.CreatedAtRouteResult" in 1349.7665ms.
+2020-10-13 16:30:19.505 -04:00 [Verbose] "Action Filter": Before executing "OnActionExecuted" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:19.505 -04:00 [Verbose] "Action Filter": After executing "OnActionExecuted" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:19.507 -04:00 [Verbose] Before executing action result "Microsoft.AspNetCore.Mvc.CreatedAtRouteResult".
+2020-10-13 16:30:19.508 -04:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-10-13 16:30:19.510 -04:00 [Debug] No information found on request to perform content negotiation.
+2020-10-13 16:30:19.510 -04:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-13 16:30:19.510 -04:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-13 16:30:19.511 -04:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-10-13 16:30:19.511 -04:00 [Information] Executing ObjectResult, writing value of type '"ShoppingApi.Domain.CurbsideOrder"'.
+2020-10-13 16:30:19.537 -04:00 [Debug] Found the endpoints ["ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+2020-10-13 16:30:19.544 -04:00 [Information] Entity Framework Core "3.1.8" initialized '"ShoppingDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-10-13 16:30:19.549 -04:00 [Debug] Successfully processed template "curbsideorders/{orderId:int}" for "ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)" resulting in "/curbsideorders/4" and ""
+2020-10-13 16:30:19.551 -04:00 [Debug] Link generation succeeded for endpoints ["ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)"] with result "/curbsideorders/4"
+2020-10-13 16:30:19.572 -04:00 [Verbose] After executing action result "Microsoft.AspNetCore.Mvc.CreatedAtRouteResult".
+2020-10-13 16:30:19.582 -04:00 [Information] Executed action "ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)" in 1587.0295ms
+2020-10-13 16:30:19.584 -04:00 [Information] Executed endpoint '"ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)"'
+2020-10-13 16:30:19.590 -04:00 [Debug] '"ShoppingDataContext"' disposed.
+2020-10-13 16:30:19.593 -04:00 [Information] Request finished in 1744.2419ms 201 application/json; charset=utf-8
+2020-10-13 16:30:19.896 -04:00 [Debug] "queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<CurbsideOrder>(
+    asyncEnumerable: new QueryingEnumerable<CurbsideOrder>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache, 
+        null, 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, CurbsideOrder>, 
+        ShoppingApi.Domain.ShoppingDataContext, 
+        null
+    ), 
+    cancellationToken: queryContext.CancellationToken)"
+2020-10-13 16:30:19.954 -04:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2020-10-13 16:30:19.955 -04:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2020-10-13 16:30:19.955 -04:00 [Debug] Opening connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:19.956 -04:00 [Debug] Opened connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:19.957 -04:00 [Debug] Executing DbCommand [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[For], [c].[Items], [c].[Status]
+FROM [CurbsideOrders] AS [c]
+WHERE [c].[Id] = @__p_0"
+2020-10-13 16:30:19.961 -04:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[For], [c].[Items], [c].[Status]
+FROM [CurbsideOrders] AS [c]
+WHERE [c].[Id] = @__p_0"
+2020-10-13 16:30:19.991 -04:00 [Debug] Context '"ShoppingDataContext"' started tracking '"CurbsideOrder"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:19.993 -04:00 [Debug] A data reader was disposed.
+2020-10-13 16:30:19.994 -04:00 [Debug] Closing connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:19.995 -04:00 [Debug] Closed connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:20.608 -04:00 [Debug] SaveChanges starting for '"ShoppingDataContext"'.
+2020-10-13 16:30:20.609 -04:00 [Debug] DetectChanges starting for '"ShoppingDataContext"'.
+2020-10-13 16:30:20.611 -04:00 [Debug] Unchanged '"CurbsideOrder"."Status"' detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2020-10-13 16:30:20.611 -04:00 [Debug] An '"CurbsideOrder"' entity tracked by '"ShoppingDataContext"' changed from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:20.612 -04:00 [Debug] DetectChanges completed for '"ShoppingDataContext"'.
+2020-10-13 16:30:20.612 -04:00 [Debug] Opening connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:20.613 -04:00 [Debug] Opened connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:20.613 -04:00 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2020-10-13 16:30:20.613 -04:00 [Debug] Began transaction with isolation level '"ReadCommitted"'.
+2020-10-13 16:30:20.618 -04:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2020-10-13 16:30:20.618 -04:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2020-10-13 16:30:20.618 -04:00 [Debug] Executing DbCommand [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [CurbsideOrders] SET [Status] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;"
+2020-10-13 16:30:20.621 -04:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [CurbsideOrders] SET [Status] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;"
+2020-10-13 16:30:20.623 -04:00 [Debug] A data reader was disposed.
+2020-10-13 16:30:20.623 -04:00 [Debug] Committing transaction.
+2020-10-13 16:30:20.626 -04:00 [Debug] Committing transaction.
+2020-10-13 16:30:20.626 -04:00 [Debug] Closing connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:20.626 -04:00 [Debug] Closed connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:20.626 -04:00 [Debug] Disposing transaction.
+2020-10-13 16:30:20.626 -04:00 [Debug] An '"CurbsideOrder"' entity tracked by '"ShoppingDataContext"' changed from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:20.626 -04:00 [Debug] SaveChanges completed for '"ShoppingDataContext"' with 1 entities written to the database.
+2020-10-13 16:30:20.626 -04:00 [Debug] '"ShoppingDataContext"' disposed.
+2020-10-13 16:30:26.384 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:3000/curbsideorders application/json 45
+2020-10-13 16:30:26.384 -04:00 [Verbose] All hosts are allowed.
+2020-10-13 16:30:26.396 -04:00 [Debug] 1 candidate(s) found for the request path '"/curbsideorders"'
+2020-10-13 16:30:26.396 -04:00 [Debug] Endpoint '"ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)"' with route pattern '"curbsideorders"' is valid for the request path '"/curbsideorders"'
+2020-10-13 16:30:26.397 -04:00 [Debug] Request matched endpoint '"ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)"'
+2020-10-13 16:30:26.397 -04:00 [Information] Executing endpoint '"ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)"'
+2020-10-13 16:30:26.398 -04:00 [Information] Route matched with "{action = \"AddAnOrder\", controller = \"Curbside\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddAnOrder(ShoppingApi.Models.Curbside.PostCurbsideOrderRequest)" on controller "ShoppingApi.Controllers.CurbsideController" ("ShoppingApi").
+2020-10-13 16:30:26.398 -04:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-10-13 16:30:26.398 -04:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-10-13 16:30:26.398 -04:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2020-10-13 16:30:26.398 -04:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-10-13 16:30:26.398 -04:00 [Debug] Execution plan of "result" filters (in the following order): ["None"]
+2020-10-13 16:30:26.398 -04:00 [Debug] Executing controller factory for controller "ShoppingApi.Controllers.CurbsideController" ("ShoppingApi")
+2020-10-13 16:30:26.400 -04:00 [Debug] Executed controller factory for controller "ShoppingApi.Controllers.CurbsideController" ("ShoppingApi")
+2020-10-13 16:30:26.400 -04:00 [Debug] Attempting to bind parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"' ...
+2020-10-13 16:30:26.400 -04:00 [Debug] Attempting to bind parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"' using the name '""' in request data ...
+2020-10-13 16:30:26.400 -04:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-10-13 16:30:26.401 -04:00 [Debug] JSON input formatter succeeded, deserializing to type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"'
+2020-10-13 16:30:26.401 -04:00 [Debug] Done attempting to bind parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"'.
+2020-10-13 16:30:26.401 -04:00 [Debug] Done attempting to bind parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"'.
+2020-10-13 16:30:26.401 -04:00 [Debug] Attempting to validate the bound parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"' ...
+2020-10-13 16:30:26.402 -04:00 [Debug] Done attempting to validate the bound parameter '"orderToPlace"' of type '"ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"'.
+2020-10-13 16:30:26.402 -04:00 [Verbose] "Action Filter": Before executing "OnActionExecuting" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:26.402 -04:00 [Verbose] "Action Filter": After executing "OnActionExecuting" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:26.402 -04:00 [Information] Executing action method "ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)" - Validation state: Valid
+2020-10-13 16:30:26.402 -04:00 [Verbose] Executing action method "ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)" with arguments (["ShoppingApi.Models.Curbside.PostCurbsideOrderRequest"])
+2020-10-13 16:30:26.412 -04:00 [Information] Entity Framework Core "3.1.8" initialized '"ShoppingDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-10-13 16:30:26.412 -04:00 [Debug] '"ShoppingDataContext"' generated a temporary value for the '"Id"' property of new '"CurbsideOrder"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:26.413 -04:00 [Debug] Context '"ShoppingDataContext"' started tracking '"CurbsideOrder"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:26.413 -04:00 [Debug] SaveChanges starting for '"ShoppingDataContext"'.
+2020-10-13 16:30:26.414 -04:00 [Debug] DetectChanges starting for '"ShoppingDataContext"'.
+2020-10-13 16:30:26.414 -04:00 [Debug] DetectChanges completed for '"ShoppingDataContext"'.
+2020-10-13 16:30:26.414 -04:00 [Debug] Opening connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:26.414 -04:00 [Debug] Opened connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:26.415 -04:00 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2020-10-13 16:30:26.415 -04:00 [Debug] Began transaction with isolation level '"ReadCommitted"'.
+2020-10-13 16:30:26.416 -04:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2020-10-13 16:30:26.416 -04:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2020-10-13 16:30:26.417 -04:00 [Debug] Executing DbCommand [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CurbsideOrders] ([For], [Items], [Status])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [CurbsideOrders]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2020-10-13 16:30:26.418 -04:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CurbsideOrders] ([For], [Items], [Status])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [CurbsideOrders]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2020-10-13 16:30:26.419 -04:00 [Debug] Foreign key property '"CurbsideOrder"."Id"' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2020-10-13 16:30:26.419 -04:00 [Debug] A data reader was disposed.
+2020-10-13 16:30:26.420 -04:00 [Debug] Committing transaction.
+2020-10-13 16:30:26.422 -04:00 [Debug] Committing transaction.
+2020-10-13 16:30:26.422 -04:00 [Debug] Closing connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:26.422 -04:00 [Debug] Closed connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:26.422 -04:00 [Debug] Disposing transaction.
+2020-10-13 16:30:26.423 -04:00 [Debug] An '"CurbsideOrder"' entity tracked by '"ShoppingDataContext"' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:26.423 -04:00 [Debug] SaveChanges completed for '"ShoppingDataContext"' with 1 entities written to the database.
+2020-10-13 16:30:26.423 -04:00 [Information] Executed action method "ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)", returned result "Microsoft.AspNetCore.Mvc.CreatedAtRouteResult" in 20.7085ms.
+2020-10-13 16:30:26.423 -04:00 [Verbose] "Action Filter": Before executing "OnActionExecuted" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:26.423 -04:00 [Verbose] "Action Filter": After executing "OnActionExecuted" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:26.423 -04:00 [Verbose] Before executing action result "Microsoft.AspNetCore.Mvc.CreatedAtRouteResult".
+2020-10-13 16:30:26.423 -04:00 [Information] Entity Framework Core "3.1.8" initialized '"ShoppingDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-10-13 16:30:26.423 -04:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-10-13 16:30:26.424 -04:00 [Debug] No information found on request to perform content negotiation.
+2020-10-13 16:30:26.424 -04:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-13 16:30:26.424 -04:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-13 16:30:26.424 -04:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-10-13 16:30:26.424 -04:00 [Information] Executing ObjectResult, writing value of type '"ShoppingApi.Domain.CurbsideOrder"'.
+2020-10-13 16:30:26.424 -04:00 [Debug] Found the endpoints ["ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+2020-10-13 16:30:26.425 -04:00 [Debug] Successfully processed template "curbsideorders/{orderId:int}" for "ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)" resulting in "/curbsideorders/5" and ""
+2020-10-13 16:30:26.425 -04:00 [Debug] Link generation succeeded for endpoints ["ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)"] with result "/curbsideorders/5"
+2020-10-13 16:30:26.425 -04:00 [Verbose] After executing action result "Microsoft.AspNetCore.Mvc.CreatedAtRouteResult".
+2020-10-13 16:30:26.426 -04:00 [Information] Executed action "ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)" in 27.6251ms
+2020-10-13 16:30:26.426 -04:00 [Information] Executed endpoint '"ShoppingApi.Controllers.CurbsideController.AddAnOrder (ShoppingApi)"'
+2020-10-13 16:30:26.426 -04:00 [Debug] '"ShoppingDataContext"' disposed.
+2020-10-13 16:30:26.426 -04:00 [Information] Request finished in 44.684ms 201 application/json; charset=utf-8
+2020-10-13 16:30:26.429 -04:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2020-10-13 16:30:26.429 -04:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2020-10-13 16:30:26.429 -04:00 [Debug] Opening connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:26.429 -04:00 [Debug] Opened connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:26.429 -04:00 [Debug] Executing DbCommand [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[For], [c].[Items], [c].[Status]
+FROM [CurbsideOrders] AS [c]
+WHERE [c].[Id] = @__p_0"
+2020-10-13 16:30:26.430 -04:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[For], [c].[Items], [c].[Status]
+FROM [CurbsideOrders] AS [c]
+WHERE [c].[Id] = @__p_0"
+2020-10-13 16:30:26.431 -04:00 [Debug] Context '"ShoppingDataContext"' started tracking '"CurbsideOrder"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:26.431 -04:00 [Debug] A data reader was disposed.
+2020-10-13 16:30:26.431 -04:00 [Debug] Closing connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:26.431 -04:00 [Debug] Closed connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:27.050 -04:00 [Debug] SaveChanges starting for '"ShoppingDataContext"'.
+2020-10-13 16:30:27.050 -04:00 [Debug] DetectChanges starting for '"ShoppingDataContext"'.
+2020-10-13 16:30:27.051 -04:00 [Debug] Unchanged '"CurbsideOrder"."Status"' detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2020-10-13 16:30:27.052 -04:00 [Debug] An '"CurbsideOrder"' entity tracked by '"ShoppingDataContext"' changed from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:27.053 -04:00 [Debug] DetectChanges completed for '"ShoppingDataContext"'.
+2020-10-13 16:30:27.053 -04:00 [Debug] Opening connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:27.054 -04:00 [Debug] Opened connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:27.055 -04:00 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2020-10-13 16:30:27.056 -04:00 [Debug] Began transaction with isolation level '"ReadCommitted"'.
+2020-10-13 16:30:27.057 -04:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2020-10-13 16:30:27.058 -04:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2020-10-13 16:30:27.058 -04:00 [Debug] Executing DbCommand [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [CurbsideOrders] SET [Status] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;"
+2020-10-13 16:30:27.060 -04:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [CurbsideOrders] SET [Status] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;"
+2020-10-13 16:30:27.060 -04:00 [Debug] A data reader was disposed.
+2020-10-13 16:30:27.060 -04:00 [Debug] Committing transaction.
+2020-10-13 16:30:27.063 -04:00 [Debug] Committing transaction.
+2020-10-13 16:30:27.064 -04:00 [Debug] Closing connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:27.064 -04:00 [Debug] Closed connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:27.064 -04:00 [Debug] Disposing transaction.
+2020-10-13 16:30:27.065 -04:00 [Debug] An '"CurbsideOrder"' entity tracked by '"ShoppingDataContext"' changed from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:27.065 -04:00 [Debug] SaveChanges completed for '"ShoppingDataContext"' with 1 entities written to the database.
+2020-10-13 16:30:27.065 -04:00 [Debug] '"ShoppingDataContext"' disposed.
+2020-10-13 16:30:47.756 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:3000/curbsideorders/5 application/json 32
+2020-10-13 16:30:47.759 -04:00 [Verbose] All hosts are allowed.
+2020-10-13 16:30:47.759 -04:00 [Debug] 1 candidate(s) found for the request path '"/curbsideorders/5"'
+2020-10-13 16:30:47.759 -04:00 [Debug] Endpoint '"ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)"' with route pattern '"curbsideorders/{orderId:int}"' is valid for the request path '"/curbsideorders/5"'
+2020-10-13 16:30:47.759 -04:00 [Debug] Request matched endpoint '"ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)"'
+2020-10-13 16:30:47.759 -04:00 [Information] Executing endpoint '"ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)"'
+2020-10-13 16:30:47.766 -04:00 [Information] Route matched with "{action = \"GetOrderById\", controller = \"Curbside\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetOrderById(Int32)" on controller "ShoppingApi.Controllers.CurbsideController" ("ShoppingApi").
+2020-10-13 16:30:47.767 -04:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-10-13 16:30:47.767 -04:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-10-13 16:30:47.767 -04:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2020-10-13 16:30:47.767 -04:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-10-13 16:30:47.767 -04:00 [Debug] Execution plan of "result" filters (in the following order): ["None"]
+2020-10-13 16:30:47.767 -04:00 [Debug] Executing controller factory for controller "ShoppingApi.Controllers.CurbsideController" ("ShoppingApi")
+2020-10-13 16:30:47.771 -04:00 [Debug] Executed controller factory for controller "ShoppingApi.Controllers.CurbsideController" ("ShoppingApi")
+2020-10-13 16:30:47.771 -04:00 [Debug] Attempting to bind parameter '"orderId"' of type '"System.Int32"' ...
+2020-10-13 16:30:47.771 -04:00 [Debug] Attempting to bind parameter '"orderId"' of type '"System.Int32"' using the name '"orderId"' in request data ...
+2020-10-13 16:30:47.772 -04:00 [Debug] Done attempting to bind parameter '"orderId"' of type '"System.Int32"'.
+2020-10-13 16:30:47.772 -04:00 [Debug] Done attempting to bind parameter '"orderId"' of type '"System.Int32"'.
+2020-10-13 16:30:47.772 -04:00 [Debug] Attempting to validate the bound parameter '"orderId"' of type '"System.Int32"' ...
+2020-10-13 16:30:47.772 -04:00 [Debug] Done attempting to validate the bound parameter '"orderId"' of type '"System.Int32"'.
+2020-10-13 16:30:47.772 -04:00 [Verbose] "Action Filter": Before executing "OnActionExecuting" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:47.772 -04:00 [Verbose] "Action Filter": After executing "OnActionExecuting" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:47.772 -04:00 [Information] Executing action method "ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)" - Validation state: Valid
+2020-10-13 16:30:47.772 -04:00 [Verbose] Executing action method "ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)" with arguments (["5"])
+2020-10-13 16:30:47.775 -04:00 [Information] Entity Framework Core "3.1.8" initialized '"ShoppingDataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-10-13 16:30:47.776 -04:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2020-10-13 16:30:47.776 -04:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2020-10-13 16:30:47.776 -04:00 [Debug] Opening connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:47.777 -04:00 [Debug] Opened connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:47.777 -04:00 [Debug] Executing DbCommand [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[For], [c].[Items], [c].[Status]
+FROM [CurbsideOrders] AS [c]
+WHERE [c].[Id] = @__p_0"
+2020-10-13 16:30:47.778 -04:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[For], [c].[Items], [c].[Status]
+FROM [CurbsideOrders] AS [c]
+WHERE [c].[Id] = @__p_0"
+2020-10-13 16:30:47.779 -04:00 [Debug] Context '"ShoppingDataContext"' started tracking '"CurbsideOrder"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-13 16:30:47.779 -04:00 [Debug] A data reader was disposed.
+2020-10-13 16:30:47.780 -04:00 [Debug] Closing connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:47.780 -04:00 [Debug] Closed connection to database '"shopping_dev"' on server '".\sqlexpress"'.
+2020-10-13 16:30:47.781 -04:00 [Information] Executed action method "ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.9347ms.
+2020-10-13 16:30:47.781 -04:00 [Verbose] "Action Filter": Before executing "OnActionExecuted" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:47.781 -04:00 [Verbose] "Action Filter": After executing "OnActionExecuted" on filter "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter".
+2020-10-13 16:30:47.781 -04:00 [Verbose] Before executing action result "Microsoft.AspNetCore.Mvc.OkObjectResult".
+2020-10-13 16:30:47.781 -04:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-10-13 16:30:47.781 -04:00 [Debug] No information found on request to perform content negotiation.
+2020-10-13 16:30:47.781 -04:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-13 16:30:47.781 -04:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-13 16:30:47.782 -04:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-10-13 16:30:47.782 -04:00 [Information] Executing ObjectResult, writing value of type '"ShoppingApi.Domain.CurbsideOrder"'.
+2020-10-13 16:30:47.782 -04:00 [Verbose] After executing action result "Microsoft.AspNetCore.Mvc.OkObjectResult".
+2020-10-13 16:30:47.783 -04:00 [Information] Executed action "ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)" in 15.3321ms
+2020-10-13 16:30:47.783 -04:00 [Information] Executed endpoint '"ShoppingApi.Controllers.CurbsideController.GetOrderById (ShoppingApi)"'
+2020-10-13 16:30:47.783 -04:00 [Debug] '"ShoppingDataContext"' disposed.
+2020-10-13 16:30:47.783 -04:00 [Information] Request finished in 28.9647ms 200 application/json; charset=utf-8

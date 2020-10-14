@@ -12,5 +12,6 @@ namespace ShoppingApi.Domain
         public string For { get; set; }
         public string Items { get; set; } // "1,2,3"
         public CurbsideOrderStatus Status { get; set; }
+
     }
 }

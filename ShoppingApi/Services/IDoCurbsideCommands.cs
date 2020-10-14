@@ -6,6 +6,7 @@ namespace ShoppingApi.Services
 {
     public interface IDoCurbsideCommands
     {
-        Task<CurbsideOrder> AddOrder(PostCurbsideOrderRequest orderToPlace);
+        Task<CurbsideOrder> AddOrder(PostCurbsideOrderRequest orderToPlace, bool doAsync = true);
+        Task<CurbsideOrder> AddOrderWs(PostCurbsideOrderRequest orderToBePlaced, string connectionId);
     }
 }

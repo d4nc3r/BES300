@@ -72,4 +72,4 @@ C:\dev\ShoppingApiSolution\ShoppingApi\bin\Debug\netcoreapp3.1\Serilog.Sinks.Per
 C:\dev\ShoppingApiSolution\ShoppingApi\bin\Debug\netcoreapp3.1\Serilog.Sinks.Seq.dll
 C:\dev\ShoppingApiSolution\ShoppingApi\obj\Debug\netcoreapp3.1\ShoppingApi.csproj.CoreCompileInputs.cache
 C:\dev\ShoppingApiSolution\ShoppingApi\obj\Debug\netcoreapp3.1\ShoppingApi.MvcApplicationPartsAssemblyInfo.cache
-C:\dev\ShoppingApiSolution\ShoppingApi\obj\Debug\netcoreapp3.1\ShoppingApi.csprojAssemblyReference.cache
+C:\dev\ShoppingApiSolution\ShoppingApi\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll

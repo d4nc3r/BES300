@@ -22,20 +22,50 @@ namespace ShoppingApi.Services
             _channel = channel;
         }
 
-        public async Task<CurbsideOrder> AddOrder(PostCurbsideOrderRequest orderToPlace)
+        public async Task<CurbsideOrder> AddOrder(PostCurbsideOrderRequest orderToPlace, bool doAsync)
         {
 
             var order = _mapper.Map<CurbsideOrder>(orderToPlace);
             _context.CurbsideOrders.Add(order);
             await _context.SaveChangesAsync();
+            if (doAsync)
+            {
+                try
+                {
+                    await _channel.AddCurbside(new CurbsideChannelRequest { OrderId = order.Id });
+                }
+                catch (OperationCanceledException ex)
+                {
+                    // do something?
+                    throw;
+                }
+            } else
+            {
+                var numberOfItems = order.Items.Split(',').Count();
+                for(var t = 0; t < numberOfItems; t++)
+                {
+                    await Task.Delay(300);
+                }
+            }
+            return order;
+        }
+
+        public async Task<CurbsideOrder> AddOrderWs(PostCurbsideOrderRequest orderToBePlaced, string connectionId)
+        {
+            var order = _mapper.Map<CurbsideOrder>(orderToBePlaced);
+            _context.CurbsideOrders.Add(order);
+            await _context.SaveChangesAsync();
+
             try
             {
-                await _channel.AddCurbside(new CurbsideChannelRequest { OrderId = order.Id });
-            } catch(OperationCanceledException ex)
+                await _channel.AddCurbside(new CurbsideChannelRequest { OrderId = order.Id, ClientId = connectionId });
+            }
+            catch (OperationCanceledException ex)
             {
                 // do something?
                 throw;
             }
+        
             return order;
         }
 
